@@ -4,6 +4,15 @@ public class TesteFuncionario {
     private String cpf;
     private double salario;
     private int tipo = 0; // - Funcionario comum, 1- Gerente, 2-Diretor
+    private int senha;
+
+    public boolean autentica (int senha) {
+        if(this.senha == senha) {
+            return true;
+        }else {
+            return false;
+        }
+    }
 
     public double getBonificacao() {
         
