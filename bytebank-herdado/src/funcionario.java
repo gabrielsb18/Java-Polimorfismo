@@ -2,10 +2,10 @@ public class funcionario {
     
     private String nome;
     private String cpf;
-    protected double salario;
+    private double salario; // O ideal é deixar sempre nosso methodo privado!
 
     public double getBonificacao() {
-        return this.salario*0.5;
+        return this.salario*0.05;
     }
 
     public String getNome() {
@@ -28,6 +28,8 @@ public class funcionario {
     }
 
 }
+
+// O primeiro Pilar da herança é a reutilização.
 
 // Atributo privado : modificador de visibilidade = visivel somente nesta classe.
 

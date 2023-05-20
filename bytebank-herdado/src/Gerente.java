@@ -15,7 +15,11 @@ public class Gerente extends funcionario {
     }
 
     public double getBonificacao() { // Reescrita de codigo = redefinir o methodo na classe filha, utilizando a mesma assinatura;
-      return (this.salario * 0.1) + super.salario; 
+        System.out.println("Chamando o método de bonificacao do GERENTE");
+        return super.getBonificacao() + super.getSalario(); 
+
+      // Removi a visualização de protected para privado, e ao invés de chamar meu methodo direto, chamei ele através do get, junto com nossa variavel "super" pra indicar que estamos chamando um atributo da classe mãe.
+
       // A palavra ou variavel "super" irá deixar claro que estamos buscando o atributo da classe mãe, ao invés do "this"
     }
 }
@@ -38,7 +42,7 @@ public class Gerente extends funcionario {
 
 // Depois de criarmos esta classe que herdará os atributos da classe funcionario é hora de criarmos uma classe para teste e hora de chamarmos um objeto, sendo este "Gerente g1 = new Gerente()"
 
-// O "g1" da nossa classe gerente faz parte da instancia que criamos, onde o g1 é a variavel atribuida.
+// O "g1" da nossa classe gerente faz parte da instancia que criamos, onde o g1 é a referencia do tipo funcionario.
 
 // O nosso atributo especifico da classe gerente é uma funcionalidade, que atribuimos, sendo assim é um methodo.
 

@@ -9,6 +9,6 @@ public class FuncionarioTeste {
         System.out.println(gabriel.getNome());
         System.out.println(gabriel.getBonificacao());
 
-        //gabriel.salario = 300.0;
+       // gabriel.salario = 300.0;
     }
 }
