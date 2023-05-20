@@ -1,16 +1,8 @@
 public abstract class Autenticavel{      
 
-    public void setSenha(int senha) {
-        this.senha = senha;
-    }
+    public abstract void setSenha(int senha);
 
-    public boolean autentica(int senha){ // > Metodo e seus parametros
-        if(this.senha == senha ) {
-            return true;
-        }else{
-            return false;
-        }
-    }
+    public abstract boolean autentica(int senha);
 }
 
 //Interface não pode ter nada concreto
