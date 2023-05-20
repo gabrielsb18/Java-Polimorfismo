@@ -1,6 +1,6 @@
-public class Gerente extends funcionario { 
+public class Gerente extends funcionario{
     
-    private int senha;
+/*     private int senha;
 
     public void setSenha(int senha) {
         this.senha = senha;
@@ -12,7 +12,7 @@ public class Gerente extends funcionario {
         }else{
             return false;
         }
-    }
+    } */
 
     public double getBonificacao() { // Reescrita de codigo = redefinir o methodo na classe filha, utilizando a mesma assinatura;
         System.out.println("Chamando o método de bonificacao do GERENTE");
@@ -23,6 +23,10 @@ public class Gerente extends funcionario {
       // A palavra ou variavel "super" irá deixar claro que estamos buscando o atributo da classe mãe, ao invés do "this"
     }
 }
+
+//O Java não permite fazer herança multipla de classes!! Diferente de outras linguagens como c++ e python :(
+
+//"Herança multipla" = extendemos nossa classe para duas classes mães. Até então estava usando apenas a classe simples.
 
 // "extends" faz aproveitamento da classe funcionario não sendo mais necessario todos os gets e sets.
 

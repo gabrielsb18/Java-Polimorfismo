@@ -1,6 +1,6 @@
 // Não posso instanciar objetos dessa classe, pq é abstrata
 public abstract class funcionario {
-    
+
     private String nome;
     private String cpf;
     private double salario; // O ideal é deixar sempre nosso methodo privado!
