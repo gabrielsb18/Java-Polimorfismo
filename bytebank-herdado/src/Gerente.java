@@ -16,7 +16,7 @@ public class Gerente extends funcionario {
 
     public double getBonificacao() { // Reescrita de codigo = redefinir o methodo na classe filha, utilizando a mesma assinatura;
         System.out.println("Chamando o método de bonificacao do GERENTE");
-        return super.getBonificacao() + super.getSalario(); 
+        return super.getSalario(); 
 
       // Removi a visualização de protected para privado, e ao invés de chamar meu methodo direto, chamei ele através do get, junto com nossa variavel "super" pra indicar que estamos chamando um atributo da classe mãe.
 
