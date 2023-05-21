@@ -17,4 +17,5 @@ public class AutenticacaoUtil {
 }
 
 // A composiçao evita que eu reutilize codigo, ou seja, que eu repita uma implementação de um metodo pra outras classes, sendo necessario apenas a chamada da classe.
+
 // "Composição" = um depende do outro . 
