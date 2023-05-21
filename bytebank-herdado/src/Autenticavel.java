@@ -1,9 +1,11 @@
-public abstract class Autenticavel{      
+public abstract interface Autenticavel{      //retiramos o class por interface
 
     public abstract void setSenha(int senha);
 
     public abstract boolean autentica(int senha);
 }
+
+
 
 //Interface não pode ter nada concreto
 
