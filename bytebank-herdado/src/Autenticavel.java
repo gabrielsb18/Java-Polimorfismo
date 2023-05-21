@@ -10,7 +10,7 @@ public abstract interface Autenticavel {      //retiramos o class por interface
     public abstract boolean autentica(int senha);
 }
 
-// A interface é uma alternativa a herança multipla, referente a o polimorfismo.
+// A interface é uma alternativa a herança multipla, referente a o polimorfismo, não é para reutilização de codigo.
 
 // Repetindo: O conceito principla do polimorfismo é a herança!
 
@@ -25,6 +25,5 @@ public abstract interface Autenticavel {      //retiramos o class por interface
 // "Interface" = é uma classe abstrata com todos os metodos abstratos
 
 // F2 = Refactor name (multiple class function)
-
 
 // Com o "super" não estamos herdando nenhum metodo apenas deixando claro que estamos acessando um membro da classe mãe.
