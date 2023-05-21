@@ -1,5 +1,7 @@
-public class Gerente extends funcionario{
+//Gerente eh um funcionario, Gerente herda da Class funcionario, assina o contrato Autenticavel, é um autenticavel
+public class Gerente extends funcionario implements Autenticavel{
     
+    private int senha;
 /*     private int senha;
 
     public void setSenha(int senha) {
@@ -22,7 +24,25 @@ public class Gerente extends funcionario{
 
       // A palavra ou variavel "super" irá deixar claro que estamos buscando o atributo da classe mãe, ao invés do "this"
     }
+
+    @Override
+    public boolean autentica(int senha) {
+        if(this.senha == senha ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public void setSenha(int senha) {
+        this.senha = senha;
+    }
 }
+
+//Mesmo com o uso de interface foi perceptivel a repetição de codigo, no caso, as minhas implementações em cada tipo de funcionario diferente. Pórem creio que podemos resolver iss  .
+
+//Em um sistema eu posso "assinanar (implements)", vários contratos.
 
 //O Java não permite fazer herança multipla de classes!! Diferente de outras linguagens como c++ e python :(
 
